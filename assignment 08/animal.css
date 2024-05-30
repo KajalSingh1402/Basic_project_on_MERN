@@ -1,0 +1,45 @@
+h2, span{
+    color: brown;
+}
+.card{
+    width: 300px;
+    border:2px solid  black;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 3px 10px black;
+}
+img{
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 2px 3px 10px rgb(42, 68, 42);
+    
+}
+img:hover{
+    box-shadow: 2px 3px 10px rgb(52, 150, 52);
+    border-radius: 30px;
+}
+h3{
+    font-size: 20px;
+    text-decoration:  red underline;
+}
+p{
+    font-style: italic;
+}
+
+h4{
+    text-align: right;
+    color: green;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width:375px){
+    #pets{
+        flex-wrap: wrap;
+    }
+}
