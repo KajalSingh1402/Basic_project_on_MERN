@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.main{
+    background-image: url("moon.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+.btn_one{
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu{
+    position: fixed;
+    left:-340px ;
+    height: 100vh;
+    width: 330px;
+    background-color:rgba(255,255,255,0.1) ;
+    box-shadow: 2px 2px 10px white;
+    transition: 0.5s linear ;
+}
+.sidebar_menu .logo h1{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    left: 15px;
+    text-decoration: white underline;
+    
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .btn_two i{
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .menu li{
+    margin-top: 5px;
+    padding: 15px 20px;
+}
+
+.sidebar_menu .menu i, a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .main i{
+    padding-right: 8px;
+    margin: 5px;
+
+
+}
+.sidebar_menu .social{
+    opacity: 0.5;
+    position: absolute;
+    left: 25px;
+    bottom: 50px;
+    font-size: 25px;
+}
+.sidebar_menu .social i{
+    opacity:0.5;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.btn_one i:hover{
+   font-size: 30px;
+   color: rgba(255, 255, 255, 0.5);
+}
+.btn_two i:hover{
+   font-size: 30px;
+   color: rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .social i:hover{
+    opacity: 2;
+    transform: scale(1.5);
+}
+#check:checked ~.sidebar_menu{
+    left: 0;
+}
+#check:checked~ .btn_one i{
+    opacity: 0;
+}
+#check:checked~ .sidebar_menu .btn_two i{
+    opacity: 1;  
+}
