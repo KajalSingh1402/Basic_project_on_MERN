@@ -1,0 +1,16 @@
+*{
+    text-align: center;
+    align-items: center;
+}
+
+div{
+    height: 100px;
+    width: 300px;
+    border: 2px solid rgb(23, 23, 209);
+    margin: auto;
+}
+button{
+     padding: 6px;
+     color: azure;
+     background-color: blueviolet;
+}
